@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies and Interests</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <h1>Hobbies and Interests</h1>
+    </header>
+    <section>
+        <h2>Music</h2>
+        <p>I love listening hip-hop. Below is a list of my favorite rappers and my top three songs from each of them:</p>
+        <ul>
+            <li>
+                <strong>Kendrick Lamar</strong>
+                <ul>
+                    <li>Mortal Man</li>
+                    <li>Mirror</li>
+                    <li>Prayer</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Nas</strong>
+                <ul>
+                    <li>Death Row East</li>
+                    <li>The World is Yours</li>
+                    <li>Legit</li>
+                </ul>
+            </li>
+            <li>
+                <strong>J. Cole</strong>
+                <ul>
+                    <li>4 Your Eyez Only</li>
+                    <li>False Prophets</li>
+                    <li>Apparently</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Reading</h2>
+        <p>Over the last couple of months, I've rediscovered a love of reading. Here are some of the books I've read recently, ranked in order by how much I liked them:</p>
+        <ol>
+            <li>Siddhartha by Herman Hesse</li>
+            <li>The Antropocene Reviewed by John Greene</li>
+            <li>Born Standing Up by Steve Martin</li>
+            <li>Trigger Warning by Neil Gaiman</li>
+            <li>The Four Agreements by Don Miguel Ruiz</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Math and Coding</h2>
+        <p>Through taking this IT class, I've been able to learn much more about coding then I knew before. One of favorite assignments was the below Python assignment from earlier in the semster, where the volume of various 3D shapes could be calculated.</p>
+    </section>
+
+  
+  
+  <pre>
+
+print("Calculating the Volume of a Cube, Cylinder or Cone: ")
+import math
+
+print ("Choose an option below ")
+print ("1. Cube")
+print ("2. Cylinder")
+print ("3. Cone")
+
+shape = input('Please enter 1 for Cube, 2 for Cylidner, or 3 for Cone ')
+
+def cube():
+        length = float(input(' Enter the length of your Cube: '))
+        Volume = length * length * length
+        print(" The Volume of a Cube = %f" %Volume)
+
+
+def cylinder():
+        radius = float(input(' Enter the Radius of your Cylinder: '))
+        height = float(input(' Enter the Height of ypur Cylinder: '))
+        Volume = math.pi * radius * radius * height
+        print(" The Volume of a Cylinder = %f" %Volume)
+
+
+def cone():
+        radius = float(input(' Enter the Radius of your Cone: '))
+        height = float(input(' Enter the Height of ypur Cone: '))
+        Volume = (1/3) * math.pi * radius * radius * height
+        print(" The Volume of a Cone = %f" %Volume)
+
+
+if (shape == "1"):
+    total = cube()
+    
+if (shape == "2"):
+    total = cylinder()
+    
+if (shape == "3"):
+    total = cone()
+
+</pre>
+  <footer>
+        <hr>
+        <p><a href="AboutMe.html">Previous</a></p>
+        <hr>
+        <h4>Learn all about Harshawn by using this site navigator!</h4>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Work.html">Work and Education</a></li>
+            <li><a href="Contact.html">Contact Me</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Hobbies.html">Hobbies and Interests</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
